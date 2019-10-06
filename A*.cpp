@@ -31,7 +31,7 @@ typedef struct _Island
 	bool expanded = false;
 }Island;
 
-float weight = 1;
+static float weight = 1;
 int expanded_states = 0, visited_states = 0;
 
 
@@ -47,7 +47,7 @@ struct stateComparator{
 	{
 		// In general is to check for some attribute of State
 		// return a.null_attribute < b.null_attribute;
-		return a->g1 + a->h1 + a->h > b->g1 + b->h1 + b->h;
+		return a->g1 + a->h1 + weight*a->h > b->g1 + b->h1 + weight*b->h;
 	}
 };
 
@@ -81,7 +81,7 @@ public:
 		// cout<<"Delete Successful"<<endl;
 	}
 
-	void getPath()
+	double getPath()
 	{
 	   	cout<<"Inside Getpath"<<endl;			
 		bool reached = false;
@@ -194,59 +194,60 @@ public:
 			
 						
 			// This will take care of the island successors 
-			for (int i = 0; i < islands.size(); ++i)
-			{
-				// checking if inside activation region
-				double islandDist = sqrt(pow(islands[i].x-front->x,2)+pow(islands[i].y-front->y,2));
-				if(  islandDist > activationRadius || islandDist == 0 )
-					continue ;
-					
-				// these islands are the expanded nodes or neighbours for current nodes	
-				int nextX,nextY;
-				nextX = islands[i].x, nextY = islands[i].y;
+			// for (int i = 0; i < islands.size(); ++i)
+			// {
 
-				if( (img.at<Vec3b>(nextX,nextY) != Vec3b(255,255,255))
-					||(nextX<0 || nextX>=imgCols ||  nextY<0 || nextY>=imgRows) )
-					continue;
+			// 	// checking if inside activation region
+			// 	double islandDist = sqrt(pow(islands[i].x-front->x,2)+pow(islands[i].y-front->y,2));
+			// 	if(  islandDist > activationRadius || islandDist == 0 )
+			// 		continue ;
 
-				visited_states++;
-				if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
-				{
-					State *next;
-					next = record[nextX][nextY]; 	
+			// 	// these islands are the expanded nodes or neighbours for current nodes	
+			// 	int nextX,nextY;
+			// 	nextX = islands[i].x, nextY = islands[i].y;
 
-					if( next->g1 + next->h1  > front->g1 + front->h1 + getCost(*front, *next) )
-					{
-						next->g1 = front->g1 ;
-						next->h1 = front->h1 + getCost(*front, *next);
 
-						next->h = getHeuristic(*next);
-						next->prnt = front;	
+			// 	if( (img.at<Vec3b>(nextY,nextX) != Vec3b(255,255,255))
+			// 		||(nextX<0 || nextX>=imgCols ||  nextY<0 || nextY>=imgRows) )
+			// 		continue;
+
+
+			// 	visited_states++;
+			// 	if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
+			// 	{
+			// 		State *next;
+			// 		next = record[nextX][nextY]; 	
+
+			// 		if( next->g1 + next->h1  > front->g1 + front->h1 + getCost(*front, *next) )
+			// 		{
+			// 			next->g1 = front->g1 ;
+			// 			next->h1 = front->h1 + getCost(*front, *next);
+
+			// 			next->h = getHeuristic(*next);
+			// 			next->prnt = front;	
 						
-					}
+			// 		}
 
-				}
-				else
-				{
-					// printf("New state found\n");
-					visited.at<Vec3b>(nextY,nextX) = Vec3b(0,0,255);
+			// 	}
+			// 	else
+			// 	{
+			// 		// printf("New state found\n");
+			// 		visited.at<Vec3b>(nextY,nextX) = Vec3b(0,0,255);
 					
-					State *next = new State;
-					next->x = nextX, next->y = nextY;
-					record[next->x][next->y]  = next;
+			// 		State *next = new State;
+			// 		next->x = nextX, next->y = nextY;
+			// 		record[next->x][next->y]  = next;
 
-					next->g1 = front->g1 ;
-					next->h1 = front->h1 + getCost(*front, *next);
+			// 		next->g1 = front->g1 ;
+			// 		next->h1 = front->h1 + getCost(*front, *next);
 
-					next->h = getHeuristic(*next);
-					next->prnt = front;	
+			// 		next->h = getHeuristic(*next);
+			// 		next->prnt = front;	
 
-					// cout<<"Island is pushed with coordinates: "<<nextX<<" "<<nextY<<" and h1: "<<next->h1<<endl;
-					pq.push(next);  
-				}	
-
-
-			}	
+			// 		// cout<<"Island is pushed with coordinates: "<<nextX<<" "<<nextY<<" and h1: "<<next->h1<<endl;
+			// 		pq.push(next);  
+			// 	}	
+			// }	
 
 
 		}
@@ -263,7 +264,7 @@ public:
 				img.at<Vec3b>(front->y, front->x) = Vec3b(255,0,0);
 				front = front->prnt;
 	        }  
-	        cout<<"The length of path found: "<<pathLength<<endl;
+	        cout<<"The length of path found including dummy edges: "<<pathLength<<endl;
 			imshow("Path generated", img);
 			waitKey(0);
 
@@ -271,6 +272,7 @@ public:
 			if( (*record[end.x][end.y]).h1 != 0 )
 			{
 				cout<<"removeDummyEdges() called "<<endl;
+			 	pathLength = 0;
 				vector<Island> v;
 				State *front = record[end.x][end.y];
 				while( !(front->x == start.x && front->y == start.y ))
@@ -279,19 +281,26 @@ public:
 					{
 						img.at<Vec3b>(front->y, front->x) = Vec3b(255,255,255);
 						img.at<Vec3b>((front->prnt)->y, (front->prnt)->x) = Vec3b(255,255,255);
+						
 						PathPlanner islandPath(*(front->prnt), *front, img, v);
-						islandPath.getPath();
+						pathLength += islandPath.getPath();
 						
 						imshow("Path generated", img);
 						waitKey(0);
 					}	
+					else
+						pathLength += getCost(*front, *(front->prnt));
 					front = front->prnt;
-			    }  
+			    } 
 			}
+			
+	        cout<<"The length of path found including dummy edges: "<<pathLength<<endl;
+			return pathLength;
 		}
 		else
 		{
 			cout<<"Path not found"<<endl;
+			return 0;
 		}
 	
 	}
@@ -333,7 +342,7 @@ public:
 		if( curr.x == start.x && curr.y == start.y )
 			return ;
 
-	    img.at<Vec3b>(curr.x, curr.y) = Vec3b(255,0,0);
+	    img.at<Vec3b>(curr.y, curr.x) = Vec3b(255,0,0);
 	    // cout<<curr.prnt->x<<" "<<curr.prnt->y<<endl;
 	    printPath( *(curr.prnt) );   
           
@@ -353,8 +362,7 @@ private:
     vector<State> path;
     State ***record;
     vector<Island> islands;
-    float activationRadius = 50;
-
+    float activationRadius = 75;
 };
 
 int main(int argc, char *argv[])
@@ -393,6 +401,7 @@ int main(int argc, char *argv[])
 	        {
 	        	Island temp = {i,j};
 	        	islands.push_back(temp);
+	        	img.at<Vec3b>(j, i) = Vec3b(255,255,255);
 				// circle( dst_norm_scaled, Point( i, j ), 5,  Scalar(0), 2, 8, 0 );
           	}
       	}	
