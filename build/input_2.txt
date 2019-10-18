@@ -1,4 +1,4 @@
 /home/shrey/Heuristic-Search-Using-Islands/obstacle.png
+/home/shrey/Heuristic-Search-Using-Islands/
+10
 1.1
-350 100
-10 350

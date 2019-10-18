@@ -1,4 +1,0 @@
-/home/shrey/Planning/A*/curved_obstacle_1.png
-2.0
-100 100
-150 190
