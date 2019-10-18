@@ -1,0 +1,3 @@
+Islands can be expanded even when expanded with higher value of g_value.(Treating as inconsistent states)
+Storing history for every element can be costly not necessary.
+Search to remove dummy edges are done without considering any islands.		

@@ -28,7 +28,6 @@ typedef struct _Island
 {
 	int x;
 	int y;
-	bool expanded = false;
 }Island;
 
 static float weight = 1;
@@ -139,7 +138,8 @@ public:
 				reached = true;
 			}	
 
-			// checks if the expanded state is an Island
+			// checks if the expanded state is an Island 
+			// if true pop it out of list, as once expanded no more dummy edge should be created to it
 			isIsland(*front);
 
 			// This for loop takes care of the usual 8 neighbours 
@@ -194,60 +194,60 @@ public:
 			
 						
 			// This will take care of the island successors 
-			// for (int i = 0; i < islands.size(); ++i)
-			// {
+			for (int i = 0; i < islands.size(); ++i)
+			{
 
-			// 	// checking if inside activation region
-			// 	double islandDist = sqrt(pow(islands[i].x-front->x,2)+pow(islands[i].y-front->y,2));
-			// 	if(  islandDist > activationRadius || islandDist == 0 )
-			// 		continue ;
+				// checking if inside activation region
+				double islandDist = sqrt(pow(islands[i].x-front->x,2)+pow(islands[i].y-front->y,2));
+				if(  islandDist > activationRadius || islandDist == 0 )
+					continue ;
 
-			// 	// these islands are the expanded nodes or neighbours for current nodes	
-			// 	int nextX,nextY;
-			// 	nextX = islands[i].x, nextY = islands[i].y;
-
-
-			// 	if( (img.at<Vec3b>(nextY,nextX) != Vec3b(255,255,255))
-			// 		||(nextX<0 || nextX>=imgCols ||  nextY<0 || nextY>=imgRows) )
-			// 		continue;
+				// these islands are the expanded nodes or neighbours for current nodes	
+				int nextX,nextY;
+				nextX = islands[i].x, nextY = islands[i].y;
 
 
-			// 	visited_states++;
-			// 	if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
-			// 	{
-			// 		State *next;
-			// 		next = record[nextX][nextY]; 	
+				if( (img.at<Vec3b>(nextY,nextX) != Vec3b(255,255,255))
+					||(nextX<0 || nextX>=imgCols ||  nextY<0 || nextY>=imgRows) )
+					continue;
 
-			// 		if( next->g1 + next->h1  > front->g1 + front->h1 + getCost(*front, *next) )
-			// 		{
-			// 			next->g1 = front->g1 ;
-			// 			next->h1 = front->h1 + getCost(*front, *next);
 
-			// 			next->h = getHeuristic(*next);
-			// 			next->prnt = front;	
+				visited_states++;
+				if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
+				{
+					State *next;
+					next = record[nextX][nextY]; 	
+
+					if( next->g1 + next->h1  > front->g1 + front->h1 + getCost(*front, *next) )
+					{
+						next->g1 = front->g1 ;
+						next->h1 = front->h1 + getCost(*front, *next);
+
+						next->h = getHeuristic(*next);
+						next->prnt = front;	
 						
-			// 		}
+					}
 
-			// 	}
-			// 	else
-			// 	{
-			// 		// printf("New state found\n");
-			// 		visited.at<Vec3b>(nextY,nextX) = Vec3b(0,0,255);
+				}
+				else
+				{
+					// printf("New state found\n");
+					visited.at<Vec3b>(nextY,nextX) = Vec3b(0,0,255);
 					
-			// 		State *next = new State;
-			// 		next->x = nextX, next->y = nextY;
-			// 		record[next->x][next->y]  = next;
+					State *next = new State;
+					next->x = nextX, next->y = nextY;
+					record[next->x][next->y]  = next;
 
-			// 		next->g1 = front->g1 ;
-			// 		next->h1 = front->h1 + getCost(*front, *next);
+					next->g1 = front->g1 ;
+					next->h1 = front->h1 + getCost(*front, *next);
 
-			// 		next->h = getHeuristic(*next);
-			// 		next->prnt = front;	
+					next->h = getHeuristic(*next);
+					next->prnt = front;	
 
-			// 		// cout<<"Island is pushed with coordinates: "<<nextX<<" "<<nextY<<" and h1: "<<next->h1<<endl;
-			// 		pq.push(next);  
-			// 	}	
-			// }	
+					// cout<<"Island is pushed with coordinates: "<<nextX<<" "<<nextY<<" and h1: "<<next->h1<<endl;
+					pq.push(next);  
+				}	
+			}	
 
 
 		}
@@ -327,7 +327,7 @@ public:
 		{
 			if( curr.x == islands[i].x && curr.y == islands[i].y)
 			{
-				islands[i].expanded = true;
+				islands.erase(islands.begin()+i);
 				// cout<<"Island is expanded with h1 value: "<<curr.h1<<" with coordinates: "<<curr.x<<" "<<curr.y<<endl;
 				return;
 			}
