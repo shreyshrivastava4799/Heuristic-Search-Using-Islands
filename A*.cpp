@@ -142,12 +142,12 @@ public:
 			// checks if the expanded state is an Island 
 			// if true pop it out of list, as once expanded no more dummy edge should be created to it
 			// if island parent then use normal heuristic else other wala heuristic just this is different
-			bool islandChild = true; 
-			if( front->islandParent == false)
-			{
-				if(	isIsland(*front) == false )
-					islandChild = false;
-			}
+			// bool islandChild = true; 
+			// if( front->islandParent == false)
+			// {
+			// 	if(	isIsland(*front) == false )
+			// 		islandChild = false;
+			// }
 				
 			// This for loop takes care of the usual 8 neighbours 
 			for (int i = -connNeighbours/2; i <= connNeighbours/2; ++i)
@@ -162,7 +162,7 @@ public:
 						||(nextX<0 || nextX>=imgCols ||  nextY<0 || nextY>=imgRows) )
 						continue;
 
-					if( islandChild == true )
+					if( /*islandChild ==*/ true )
 					{	
 						// cout<<"Entered into island search" <<endl;
 						if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
@@ -198,40 +198,40 @@ public:
 							pq.push(next);  
 						}
 					}	
-					else 
-					{
-						if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
-						{
-							State *next;
-							next = record[nextX][nextY]; 	
+					// else 
+					// {
+					// 	if( visited.at<Vec3b>(nextY,nextX) == Vec3b(0,0,255) )
+					// 	{
+					// 		State *next;
+					// 		next = record[nextX][nextY]; 	
 
-							if( next->g  > front->g + getCost(*front, *next) )
-							{
-								next->g = front->g + getCost(*front, *next);
-								next->h = getHeuristicThroughIsland(*next);
-								next->prnt = front;	
-								next->islandParent = false;
+					// 		if( next->g  > front->g + getCost(*front, *next) )
+					// 		{
+					// 			next->g = front->g + getCost(*front, *next);
+					// 			next->h = getHeuristicThroughIsland(*next);
+					// 			next->prnt = front;	
+					// 			next->islandParent = false;
 
-							}
+					// 		}
 
-						}
-						else
-						{
-							// printf("New state found\n");
-							visited.at<Vec3b>(nextY,nextX) = Vec3b(0,0,255);
+					// 	}
+					// 	else
+					// 	{
+					// 		// printf("New state found\n");
+					// 		visited.at<Vec3b>(nextY,nextX) = Vec3b(0,0,255);
 							
-							State *next = new State;
-							next->x = nextX, next->y = nextY;
-							record[next->x][next->y]  = next;
+					// 		State *next = new State;
+					// 		next->x = nextX, next->y = nextY;
+					// 		record[next->x][next->y]  = next;
 
-							next->g = front->g + getCost(*front, *next);
-							next->h = getHeuristicThroughIsland(*next);
-							next->prnt = front;	
-							next->islandParent = false;
+					// 		next->g = front->g + getCost(*front, *next);
+					// 		next->h = getHeuristicThroughIsland(*next);
+					// 		next->prnt = front;	
+					// 		next->islandParent = false;
 
-							pq.push(next);  
-						}
-					}
+					// 		pq.push(next);  
+					// 	}
+					// }
 				}
 		}
 	
