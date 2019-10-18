@@ -1,0 +1,72 @@
+/home/shrey/Heuristic-Search-Using-Islands/obstacle.png
+/home/shrey/Heuristic-Search-Using-Islands/resultsA*/
+Start: 183 86
+End: 377 115
+Path length: 206.012
+Time taken: 0.005992
+Total states expanded: 195
+183 86
+377 115
+Start: 186 92
+End: 249 221
+Path length: 191.899
+Time taken: 0.014284
+Total states expanded: 5735
+186 92
+249 221
+Start: 362 27
+End: 290 59
+Path length: 85.2548
+Time taken: 0.005185
+Total states expanded: 73
+362 27
+290 59
+Start: 140 226
+End: 372 136
+Path length: 269.279
+Time taken: 0.009022
+Total states expanded: 2335
+140 226
+372 136
+Start: 11 168
+End: 167 29
+Path length: 242.279
+Time taken: 0.01229
+Total states expanded: 4438
+11 168
+167 29
+Start: 62 323
+End: 67 335
+Path length: 14.0711
+Time taken: 0.00489
+Total states expanded: 13
+62 323
+67 335
+Start: 329 202
+End: 22 258
+Path length: 330.196
+Time taken: 0.006363
+Total states expanded: 623
+329 202
+22 258
+Start: 193 56
+End: 211 42
+Path length: 23.799
+Time taken: 0.00509
+Total states expanded: 19
+193 56
+211 42
+Start: 21 119
+End: 184 137
+Path length: 170.456
+Time taken: 0.005658
+Total states expanded: 370
+21 119
+184 137
+Start: 398 324
+End: 315 370
+Path length: 102.054
+Time taken: 0.005191
+Total states expanded: 84
+398 324
+315 370

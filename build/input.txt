@@ -1,7 +1,7 @@
 /home/shrey/Heuristic-Search-Using-Islands/obstacle.png
-/home/shrey/Heuristic-Search-Using-Islands/results/
+/home/shrey/Heuristic-Search-Using-Islands/resultsA*/
 10
-1.1
+1.0
 183 86
 377 115
 
