@@ -33,7 +33,9 @@ typedef struct _Island
 static float weight = 1;
 int expanded_states = 0, visited_states = 0;
 
-
+string destinationPath;
+int experimentNumber;
+static int callCount = 0;
 // The operator treats its field as max priority queue so the one thats is greater 
 // gets on the starting of queue, now we want those state that have lesser f values 
 // in the front, so 'b' should be greater than 'a' in this operator check if 'b' has lesser
@@ -82,17 +84,19 @@ public:
 
 	double getPath()
 	{
+		callCount++;
 	   	cout<<"Inside Getpath"<<endl;			
 		bool reached = false;
 
 		Mat closed = img.clone();
 		Mat visited = img.clone();
+		Mat final = img.clone();
 
 		// Show start and end points
-		circle(img, Point(start.x, start.y), 2, Vec3b(255,0,0), 1);
-		circle(img, Point(end.x, end.y), 2, Vec3b(0,255,0), 1);
-		imshow("Planning Problem", img);
-		waitKey(0);
+		circle(final, Point(start.x, start.y), 2, Vec3b(255,0,0), 1);
+		circle(final, Point(end.x, end.y), 2, Vec3b(0,255,0), 1);
+		// imshow("Planning Problem", img);
+		// waitKey(0);
 
 		// Allocation of record for states
 		record = new State**[imgRows];
@@ -125,16 +129,16 @@ public:
 			
 			// Visualisation of visited and closed states 
 			closed.at<Vec3b>(front->y,front->x) = Vec3b(0,255,0);
-			imshow("Closed States", closed);
-			imshow("Visited States", visited);
-			waitKey(10);	
+			// imshow("Closed States", closed);
+			// imshow("Visited States", visited);
+			// waitKey(10);	
 
 			// cout<<front->x<<" "<<front->y<<endl;
 			// cout<<front->prnt->x<<" "<<front->prnt->y<<endl;
 
 			if( isReached(*front))
 			{
-				printf("***********************Reached**************************\n");
+				// ("***********************Reached**************************\n");
 				reached = true;
 			}	
 
@@ -261,12 +265,13 @@ public:
 			{
 				// cout<<front->x<<" "<<front->y<<" "<<front->prnt->x<<" "<<front->prnt->y<<endl;
 				pathLength += getCost(*front, *(front->prnt));
-				img.at<Vec3b>(front->y, front->x) = Vec3b(255,0,0);
+				final.at<Vec3b>(front->y, front->x) = Vec3b(255,0,0);
 				front = front->prnt;
 	        }  
 	        cout<<"The length of path found including dummy edges: "<<pathLength<<endl;
-			imshow("Path generated", img);
-			waitKey(0);
+			imwrite(destinationPath+"finalD_"+to_string(experimentNumber)+to_string(callCount)+".png", final);
+			imwrite(destinationPath+"expanded_"+to_string(experimentNumber)+to_string(callCount)+".png", closed);
+			waitKey(10);
 
 			// if dummy edges have been used remove them 
 			if( (*record[end.x][end.y]).h1 != 0 )
@@ -285,8 +290,8 @@ public:
 						PathPlanner islandPath(*(front->prnt), *front, img, v);
 						pathLength += islandPath.getPath();
 						
-						imshow("Path generated", img);
-						waitKey(0);
+						imwrite(destinationPath+"finalWD_"+to_string(experimentNumber)+".png", img);
+						waitKey(10);
 					}	
 					else
 						pathLength += getCost(*front, *(front->prnt));
@@ -294,7 +299,7 @@ public:
 			    } 
 			}
 			
-	        cout<<"The length of path found including dummy edges: "<<pathLength<<endl;
+	        cout<<"The length of path found after removing dummy edges: "<<pathLength<<endl;
 			return pathLength;
 		}
 		else
@@ -362,16 +367,26 @@ private:
     vector<State> path;
     State ***record;
     vector<Island> islands;
-    float activationRadius = 75;
+    float activationRadius = 50;
 };
 
 int main(int argc, char *argv[])
 {
 
+	int N;
 	string imagePath;
 	cin >>imagePath;	
 	cout<<imagePath<<endl;
-	
+	cin >>destinationPath;
+	cout<<destinationPath<<endl;
+
+
+    // Number of instances
+	cin >>N;
+
+    // Control the weight of weighted A* 
+	cin >>weight; 
+
 	Mat img = imread(imagePath,1);
 	Mat img_gray;
 	cvtColor(img, img_gray, CV_BGR2GRAY);
@@ -412,27 +427,41 @@ int main(int argc, char *argv[])
 	// imshow( "Corners Window", dst_norm_scaled );
 	// waitKey(0);
 
-    // Control the weight of weighted A* 
-	cin >>weight; 
 
-	// Starting State and ending State
-	State start, end;  
-	cout<<"Give start x and start y"<<endl; 
-	cin >>start.x >>start.y; 
-	cout<<start.x<<" "<<start.y<<endl;
-	cout<<"Give end x and end y"<<endl; 
-	cin >>end.x >>end.y; 
-	cout<<end.x<<" "<<end.y<<endl;;
+	State start,end;
+	for (experimentNumber = 0; experimentNumber < N; ++experimentNumber)
+	{
+		
+		// do{
+		// 	start.x = rand()%400;
+		// 	start.y = rand()%400;
+		// } while( img.at<Vec3b>(start.y, start.x) == Vec3b(0,0,0));	
 
-	// Initialise the planner and call to plan
-	clock_t time = clock();
-	double timeTaken = 0;
-	PathPlanner path(start, end, img, islands);
-	path.getPath(); 
-	timeTaken = (clock() - time)/(double)CLOCKS_PER_SEC;
+		// do{
+		// 	end.x = rand()%400;
+		// 	end.y = rand()%400;
+		// } while( img.at<Vec3b>(end.y, end.x) == Vec3b(0,0,0));	
+		callCount = 0;
+		cin >>start.x >> start.y;
+		cin >>end.x >> end.y;
 
-	cout<<"Total states visited: "<<visited_states<<endl;
-	cout<<"Total states expanded: "<<expanded_states<<endl;
-	cout<<"Time taken: "<<timeTaken<<endl;
+		cout<<"Start: "<<start.x<<" "<<start.y<<endl;
+		cout<<"End: "<<end.x<<" "<<end.y<<endl;
+
+		// Initialise the planner and call to plan
+		expanded_states = 0;
+		clock_t time = clock();
+		double timeTaken = 0;
+		PathPlanner path(start, end, img.clone(), islands);
+		path.getPath(); 
+		timeTaken = (clock() - time)/(double)CLOCKS_PER_SEC;
+
+		cout<<"Time taken: "<<timeTaken<<endl;
+		cout<<"Total states expanded: "<<expanded_states<<endl;
+
+		cout<<start.x<<" "<<start.y<<endl;
+		cout<<end.x<<" "<<end.y<<endl;
+
+	}
 	return 0;
 }

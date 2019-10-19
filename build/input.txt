@@ -1,4 +1,33 @@
-/home/shrey/Planning/A*/curved_obstacle_1.png
-2.0
-100 100
-100 190
+/home/shrey/Heuristic-Search-Using-Islands/obstacle.png
+/home/shrey/Heuristic-Search-Using-Islands/results75_1.1/
+10
+1.1
+183 86
+377 115
+
+186 92
+249 221
+
+362 27
+290 59
+
+140 226
+372 136
+
+11 168
+167 29
+
+62 323
+67 335
+
+329 202
+22 258
+
+193 56
+211 42
+
+21 119
+184 137
+
+398 324
+315 370

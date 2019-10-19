@@ -1,0 +1,139 @@
+/home/shrey/Heuristic-Search-Using-Islands/obstacle.png
+/home/shrey/Heuristic-Search-Using-Islands/results50_1.1/
+Start: 183 86
+End: 377 115
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 206.012
+The length of path found after removing dummy edges: 206.012
+Time taken: 0.006386
+Total states expanded: 195
+183 86
+377 115
+Start: 186 92
+End: 249 221
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 189.94
+removeDummyEdges() called 
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 51.8284
+The length of path found after removing dummy edges: 51.8284
+The length of path found after removing dummy edges: 192.728
+Time taken: 0.025788
+Total states expanded: 5456
+186 92
+249 221
+Start: 362 27
+End: 290 59
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 85.2548
+The length of path found after removing dummy edges: 85.2548
+Time taken: 0.005042
+Total states expanded: 73
+362 27
+290 59
+Start: 140 226
+End: 372 136
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 266.636
+removeDummyEdges() called 
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 49.4142
+The length of path found after removing dummy edges: 49.4142
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 50.1421
+The length of path found after removing dummy edges: 50.1421
+The length of path found after removing dummy edges: 270.108
+Time taken: 0.024094
+Total states expanded: 1506
+140 226
+372 136
+Start: 11 168
+End: 167 29
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 238.179
+removeDummyEdges() called 
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 53.8701
+The length of path found after removing dummy edges: 53.8701
+The length of path found after removing dummy edges: 242.279
+Time taken: 0.021095
+Total states expanded: 3555
+11 168
+167 29
+Start: 62 323
+End: 67 335
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 14.0711
+The length of path found after removing dummy edges: 14.0711
+Time taken: 0.004711
+Total states expanded: 13
+62 323
+67 335
+Start: 329 202
+End: 22 258
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 326.821
+removeDummyEdges() called 
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 49.4142
+The length of path found after removing dummy edges: 49.4142
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 53.799
+The length of path found after removing dummy edges: 53.799
+The length of path found after removing dummy edges: 331.024
+Time taken: 0.022879
+Total states expanded: 312
+329 202
+22 258
+Start: 193 56
+End: 211 42
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 23.799
+The length of path found after removing dummy edges: 23.799
+Time taken: 0.0048
+Total states expanded: 19
+193 56
+211 42
+Start: 21 119
+End: 184 137
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 169.209
+removeDummyEdges() called 
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 49.4142
+The length of path found after removing dummy edges: 49.4142
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 23.9706
+The length of path found after removing dummy edges: 23.9706
+The length of path found after removing dummy edges: 172.113
+Time taken: 0.021354
+Total states expanded: 344
+21 119
+184 137
+Start: 398 324
+End: 315 370
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 102.054
+The length of path found after removing dummy edges: 102.054
+Time taken: 0.004918
+Total states expanded: 84
+398 324
+315 370
