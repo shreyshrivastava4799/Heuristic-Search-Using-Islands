@@ -1,0 +1,92 @@
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/obstacle.png
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/results_40/
+Start: 183 86
+End: 377 115
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 206.012
+Time taken: 0.006299
+Total states expanded: 195
+183 86
+377 115
+Start: 186 92
+End: 249 221
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 189.951
+Time taken: 0.016729
+Total states expanded: 5380
+186 92
+249 221
+Start: 362 27
+End: 290 59
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 85.2548
+Time taken: 0.005213
+Total states expanded: 73
+362 27
+290 59
+Start: 140 226
+End: 372 136
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 266.858
+Time taken: 0.00888
+Total states expanded: 1639
+140 226
+372 136
+Start: 11 168
+End: 167 29
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 238.991
+Time taken: 0.013274
+Total states expanded: 3745
+11 168
+167 29
+Start: 62 323
+End: 67 335
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 14.0711
+Time taken: 0.005057
+Total states expanded: 13
+62 323
+67 335
+Start: 329 202
+End: 22 258
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 327.384
+Time taken: 0.005762
+Total states expanded: 234
+329 202
+22 258
+Start: 193 56
+End: 211 42
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 23.799
+Time taken: 0.005185
+Total states expanded: 19
+193 56
+211 42
+Start: 21 119
+End: 184 137
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 169.212
+Time taken: 0.005523
+Total states expanded: 159
+21 119
+184 137
+Start: 398 324
+End: 315 370
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 102.054
+Time taken: 0.005339
+Total states expanded: 84
+398 324
+315 370

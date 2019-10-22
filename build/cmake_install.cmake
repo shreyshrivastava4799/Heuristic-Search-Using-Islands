@@ -1,4 +1,4 @@
-# Install script for directory: /home/shrey/Heuristic-Search-Using-Islands
+# Install script for directory: /home/shrey/Island-Search/Heuristic-Search-Using-Islands
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shrey/Heuristic-Search-Using-Islands/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

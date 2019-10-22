@@ -1,0 +1,12 @@
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/obstacle.png
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/
+Start: 10 86
+End: 377 355
+Planner Initiated
+Inside Getpath
+The length of path found including dummy edges: 487.21
+The length of path found after removing dummy edges: 487.21
+Time taken: 0.008498
+Total states expanded: 1041
+10 86
+377 355

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shrey/Heuristic-Search-Using-Islands/A*.cpp" "/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/A*.dir/A*.cpp.o"
+  "/home/shrey/Island-Search/Heuristic-Search-Using-Islands/A*.cpp" "/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/A*.dir/A*.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

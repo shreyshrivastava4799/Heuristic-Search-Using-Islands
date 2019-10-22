@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/shrey/Heuristic-Search-Using-Islands/A*.cpp
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/A*.cpp
 queue
 -
 iostream
@@ -18,13 +18,13 @@ unistd.h
 ctime
 -
 opencv/cv.h
-/home/shrey/Heuristic-Search-Using-Islands/opencv/cv.h
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/opencv/cv.h
 opencv2/core/core.hpp
-/home/shrey/Heuristic-Search-Using-Islands/opencv2/core/core.hpp
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
-/home/shrey/Heuristic-Search-Using-Islands/opencv2/highgui/highgui.hpp
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/shrey/Heuristic-Search-Using-Islands/opencv2/imgproc/imgproc.hpp
+/home/shrey/Island-Search/Heuristic-Search-Using-Islands/opencv2/imgproc/imgproc.hpp
 
 /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cv.h
 opencv2/core/core_c.h

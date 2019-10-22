@@ -119,7 +119,7 @@ public:
 		record[start.x][start.y] = &start;
 		visited.at<Vec3b>(start.y,start.x) = Vec3b(0,0,255);
 		
-
+		int count = 0;
 		while(!pq.empty() && !reached )
 		{
 			
@@ -129,9 +129,15 @@ public:
 			
 			// Visualisation of visited and closed states 
 			closed.at<Vec3b>(front->y,front->x) = Vec3b(0,255,0);
-			// imshow("Closed States", closed);
-			// imshow("Visited States", visited);
-			// waitKey(10);	
+			// if(count>1)
+			// {
+			// 	imshow("Closed States", closed);
+			// 	imshow("Visited States", visited);
+			// 	waitKey(10);	
+			// 	count = 0;
+			// }
+			// else count++;
+				
 
 			// cout<<front->x<<" "<<front->y<<endl;
 			// cout<<front->prnt->x<<" "<<front->prnt->y<<endl;
@@ -274,32 +280,32 @@ public:
 			waitKey(10);
 
 			// if dummy edges have been used remove them 
-			if( (*record[end.x][end.y]).h1 != 0 )
-			{
-				cout<<"removeDummyEdges() called "<<endl;
-			 	pathLength = 0;
-				vector<Island> v;
-				State *front = record[end.x][end.y];
-				while( !(front->x == start.x && front->y == start.y ))
-				{
-					if( getCost(*front, *(front->prnt)) > 2 )
-					{
-						img.at<Vec3b>(front->y, front->x) = Vec3b(255,255,255);
-						img.at<Vec3b>((front->prnt)->y, (front->prnt)->x) = Vec3b(255,255,255);
+			// if( (*record[end.x][end.y]).h1 != 0 )
+			// {
+			// 	cout<<"removeDummyEdges() called "<<endl;
+			//  	pathLength = 0;
+			// 	vector<Island> v;
+			// 	State *front = record[end.x][end.y];
+			// 	while( !(front->x == start.x && front->y == start.y ))
+			// 	{
+			// 		// if( getCost(*front, *(front->prnt)) > 2 )
+			// 		// {
+			// 		// 	img.at<Vec3b>(front->y, front->x) = Vec3b(255,255,255);
+			// 		// 	img.at<Vec3b>((front->prnt)->y, (front->prnt)->x) = Vec3b(255,255,255);
 						
-						PathPlanner islandPath(*(front->prnt), *front, img, v);
-						pathLength += islandPath.getPath();
+			// 		// 	PathPlanner islandPath(*(front->prnt), *front, img, v);
+			// 		// 	pathLength += islandPath.getPath();
 						
-						imwrite(destinationPath+"finalWD_"+to_string(experimentNumber)+".png", img);
-						waitKey(10);
-					}	
-					else
-						pathLength += getCost(*front, *(front->prnt));
-					front = front->prnt;
-			    } 
-			}
+			// 		// 	imwrite(destinationPath+"finalWD_"+to_string(experimentNumber)+".png", img);
+			// 		// 	waitKey(10);
+			// 		// }	
+			// 		// else
+			// 		pathLength += getCost(*front, *(front->prnt));
+			// 		front = front->prnt;
+			//     } 
+			// }
 			
-	        cout<<"The length of path found after removing dummy edges: "<<pathLength<<endl;
+	        // cout<<"The length of path found after removing dummy edges: "<<pathLength<<endl;
 			return pathLength;
 		}
 		else
@@ -367,7 +373,7 @@ private:
     vector<State> path;
     State ***record;
     vector<Island> islands;
-    float activationRadius = 50;
+    float activationRadius = 40;
 };
 
 int main(int argc, char *argv[])

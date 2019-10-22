@@ -1,4 +1,4 @@
-The system is: Linux - 4.4.0-164-generic - x86_64
+The system is: Linux - 4.4.0-165-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e2f1e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e2f1e.dir/build.make CMakeFiles/cmTC_e2f1e.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e2f1e.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_e2f1e.dir/testCCompiler.c.o   -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_e2f1e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2f1e.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_e2f1e.dir/testCCompiler.c.o  -o cmTC_e2f1e -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_68489/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68489.dir/build.make CMakeFiles/cmTC_68489.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68489.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_68489.dir/testCCompiler.c.o   -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_68489
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68489.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_68489.dir/testCCompiler.c.o  -o cmTC_68489 -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5bc56/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5bc56.dir/build.make CMakeFiles/cmTC_5bc56.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_5bc56
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bc56.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o  -o cmTC_5bc56 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_d30f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d30f3.dir/build.make CMakeFiles/cmTC_d30f3.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d30f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d30f3.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o  -o cmTC_d30f3 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5bc56' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnybuOU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_5bc56 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d30f3' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXX7Qa4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d30f3 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5bc56/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5bc56.dir/build.make CMakeFiles/cmTC_5bc56.dir/build]
-  ignore line: [make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_5bc56]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bc56.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o  -o cmTC_5bc56 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d30f3/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d30f3.dir/build.make CMakeFiles/cmTC_d30f3.dir/build]
+  ignore line: [make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d30f3]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d30f3.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o  -o cmTC_d30f3 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5bc56' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnybuOU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_5bc56 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d30f3' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXX7Qa4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d30f3 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccnybuOU.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccXX7Qa4.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5bc56] ==> ignore
+    arg [cmTC_d30f3] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_5bc56.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_d30f3.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -155,17 +155,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_37f32/fast"
-/usr/bin/make -f CMakeFiles/cmTC_37f32.dir/build.make CMakeFiles/cmTC_37f32.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_37f32.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_37f32.dir/feature_tests.c.o   -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_37f32
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37f32.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_37f32.dir/feature_tests.c.o  -o cmTC_37f32 -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_057a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_057a2.dir/build.make CMakeFiles/cmTC_057a2.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_057a2.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_057a2.dir/feature_tests.c.o   -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_057a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_057a2.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_057a2.dir/feature_tests.c.o  -o cmTC_057a2 -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -175,17 +175,17 @@ make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMa
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_307cb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_307cb.dir/build.make CMakeFiles/cmTC_307cb.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_307cb.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_307cb.dir/feature_tests.c.o   -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_307cb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_307cb.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_307cb.dir/feature_tests.c.o  -o cmTC_307cb -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_16f0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16f0a.dir/build.make CMakeFiles/cmTC_16f0a.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16f0a.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_16f0a.dir/feature_tests.c.o   -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_16f0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16f0a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_16f0a.dir/feature_tests.c.o  -o cmTC_16f0a -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -195,17 +195,17 @@ make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMa
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cf46f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cf46f.dir/build.make CMakeFiles/cmTC_cf46f.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cf46f.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_cf46f.dir/feature_tests.c.o   -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_cf46f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf46f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_cf46f.dir/feature_tests.c.o  -o cmTC_cf46f -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_164ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_164ac.dir/build.make CMakeFiles/cmTC_164ac.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_164ac.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_164ac.dir/feature_tests.c.o   -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_164ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_164ac.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_164ac.dir/feature_tests.c.o  -o cmTC_164ac -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -213,30 +213,30 @@ make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMa
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8987b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8987b.dir/build.make CMakeFiles/cmTC_8987b.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8987b.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_8987b.dir/testCXXCompiler.cxx.o -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_8987b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8987b.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_8987b.dir/testCXXCompiler.cxx.o  -o cmTC_8987b -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_50bf1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50bf1.dir/build.make CMakeFiles/cmTC_50bf1.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50bf1.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_50bf1.dir/testCXXCompiler.cxx.o -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_50bf1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50bf1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_50bf1.dir/testCXXCompiler.cxx.o  -o cmTC_50bf1 -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2e17b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2e17b.dir/build.make CMakeFiles/cmTC_2e17b.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_2e17b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e17b.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2e17b -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_24a4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_24a4f.dir/build.make CMakeFiles/cmTC_24a4f.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_24a4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24a4f.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_24a4f -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -246,23 +246,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e17b' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccI4gk5U.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_2e17b /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_24a4f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXkU97Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_24a4f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_2e17b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_2e17b.dir/build.make CMakeFiles/cmTC_2e17b.dir/build]
-  ignore line: [make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_2e17b]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e17b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2e17b -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_24a4f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_24a4f.dir/build.make CMakeFiles/cmTC_24a4f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_24a4f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24a4f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_24a4f -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -272,13 +272,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2e17b' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccI4gk5U.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_2e17b /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_24a4f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXkU97Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_24a4f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccI4gk5U.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccXkU97Z.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -296,7 +296,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2e17b] ==> ignore
+    arg [cmTC_24a4f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -308,7 +308,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_2e17b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_24a4f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -338,17 +338,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b1c04/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b1c04.dir/build.make CMakeFiles/cmTC_b1c04.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b1c04.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_b1c04.dir/feature_tests.cxx.o -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b1c04
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1c04.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_b1c04.dir/feature_tests.cxx.o  -o cmTC_b1c04 -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ad903/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad903.dir/build.make CMakeFiles/cmTC_ad903.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ad903.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_ad903.dir/feature_tests.cxx.o -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ad903
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad903.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_ad903.dir/feature_tests.cxx.o  -o cmTC_ad903 -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -411,17 +411,17 @@ make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMa
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f428d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f428d.dir/build.make CMakeFiles/cmTC_f428d.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f428d.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_f428d.dir/feature_tests.cxx.o -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f428d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f428d.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_f428d.dir/feature_tests.cxx.o  -o cmTC_f428d -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a39c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a39c7.dir/build.make CMakeFiles/cmTC_a39c7.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a39c7.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_a39c7.dir/feature_tests.cxx.o -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a39c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a39c7.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_a39c7.dir/feature_tests.cxx.o  -o cmTC_a39c7 -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -484,17 +484,17 @@ make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMa
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
+Change Dir: /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0fd55/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0fd55.dir/build.make CMakeFiles/cmTC_0fd55.dir/build
-make[1]: Entering directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0fd55.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_0fd55.dir/feature_tests.cxx.o -c /home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_0fd55
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fd55.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_0fd55.dir/feature_tests.cxx.o  -o cmTC_0fd55 -rdynamic 
-make[1]: Leaving directory '/home/shrey/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b2c58/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2c58.dir/build.make CMakeFiles/cmTC_b2c58.dir/build
+make[1]: Entering directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b2c58.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_b2c58.dir/feature_tests.cxx.o -c /home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b2c58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2c58.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_b2c58.dir/feature_tests.cxx.o  -o cmTC_b2c58 -rdynamic 
+make[1]: Leaving directory '/home/shrey/Island-Search/Heuristic-Search-Using-Islands/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
